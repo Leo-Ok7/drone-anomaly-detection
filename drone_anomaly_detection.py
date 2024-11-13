@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from flask import Flask, request, jsonify
 
-# Step 1: Generate more realistic drone data
+# More realistic drone data
 def generate_data(num_samples=1000):
-    np.random.seed(42)  # For reproducibility
+    np.random.seed(42)
     
     motor_speed = np.random.normal(loc=5000, scale=100, size=num_samples)  # Tighter variance
     battery_level = np.clip(np.random.normal(loc=90, scale=5, size=num_samples), 0, 100)  # Battery should be between 0-100%
