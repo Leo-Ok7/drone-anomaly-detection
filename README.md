@@ -14,7 +14,7 @@ A project that detects anomalies in simulated drone data using the Isolation For
 * gps_x, gps_y: Simulated GPS positions
 * anom: Anomaly label (-1 = anomaly, 1 = normal)
 
-**How to Use**
+**How to Use** :
 Run Python your_script_name.py
 
 This runs the data simulation, trains the model, shows plots, and prints out anomalies.
